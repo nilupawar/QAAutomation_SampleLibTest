@@ -2,7 +2,6 @@ package com.nilesh.test.glue;
 
 import com.nilesh.lib.config.TestScenario;
 import com.nilesh.test.pages.HomePage;
-import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 

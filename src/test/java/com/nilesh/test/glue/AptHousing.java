@@ -1,9 +1,8 @@
 package com.nilesh.test.glue;
 
-import com.nilesh.test.pages.AptHousingPage;
 import com.nilesh.lib.config.TestScenario;
+import com.nilesh.test.pages.AptHousingPage;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

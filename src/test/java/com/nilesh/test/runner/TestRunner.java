@@ -5,10 +5,9 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(dryRun = false,
+@CucumberOptions(
         features = "classpath:features",
         glue = {"com.nilesh.test.glue","com.nilesh.lib.core"},
-        monochrome = false,
         plugin = {"pretty"
                 , "html:target/cucumber_html_output"
                 , "json:target/cucumber_json_report.json"
