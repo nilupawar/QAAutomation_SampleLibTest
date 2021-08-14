@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(dryRun = false,
         features = "classpath:features",
-        glue = "com.nilesh.test.glue",
+        glue = {"com.nilesh.test.glue","com.nilesh.lib.core"},
         monochrome = false,
         plugin = {"pretty"
                 , "html:target/cucumber_html_output"
