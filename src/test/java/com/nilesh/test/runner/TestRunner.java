@@ -1,5 +1,6 @@
 package com.nilesh.test.runner;
 
+import com.nilesh.lib.core.BaseJunitRunner;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -7,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "classpath:features",
-        glue = {"com.nilesh.test.glue","com.nilesh.lib.core"},
+        glue = {"com.nilesh.test.glue"},
         plugin = {"pretty"
                 , "html:target/cucumber_html_output"
                 , "json:target/cucumber_json_report.json"
@@ -17,5 +18,5 @@ import org.junit.runner.RunWith;
         tags = "@tt",
         strict = true
 )
-public class TestRunner {
+public class TestRunner extends BaseJunitRunner {
 }

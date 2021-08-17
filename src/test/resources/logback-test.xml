@@ -19,7 +19,7 @@
         </layout>
     </appender>
 
-    <logger name="ch.qos.logback.*" level="ERROR"/>
+    <logger name="ch.qos.*" level="ERROR"/>
     <logger name="com.nilesh.*" level="${lib.log.level}"/>
 
     <root level="ERROR">

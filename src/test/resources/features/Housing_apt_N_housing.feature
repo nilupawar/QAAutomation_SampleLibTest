@@ -7,19 +7,19 @@ Feature: Apartment and housing items sorting
     When user navigates to apts/housing page
     Then user should be on apts/housing page
 
-  @sortAscending
+  @sortAscending @tt
   Scenario: Validate items on apt and housing page are sorted in price ascending order
     When ascending price sort order is selected
     ## Currently I have implemented ascending order check on first page only
     Then items should be displayed in price ascending order
 
-  @sortDescending @ignore
+  @sortDescending @tt
   Scenario: Validate items on apt and housing page are sorted in price descending order
     When descending price sort order is selected
     ## Currently I have implemented descending order check on first page only
     Then items should be displayed in price descending order
 
-  @sortOnSearch @tt @ignore
+  @sortOnSearch @ignore
   Scenario: Validate searched items on apt and housing page are sorted
     When user search for "north end" apartment
     And ascending price sort order is selected
